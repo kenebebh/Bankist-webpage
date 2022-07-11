@@ -10,43 +10,77 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS CDN link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="style.css" />
+
     <title>Bankist | When Banking meets Minimalist</title>
 
-
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Bootstrap Script CDN link -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
 
     <script defer src="script.js"></script>
   </head>
   <body>
     <header class="header">
-      <nav class="nav navbar navbar-expand-md">
-        <img
-          src="img/logo.png"
-          alt="Bankist logo"
-          class="nav__logo"
-          id="logo"
-        />
-        <ul class="nav__links collapse navbar-collapse" id="navbarSupportedContent">
-          <li class="nav__item">
-            <a class="nav__link" href="#section--1">Features</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--2">Operations</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--3">Testimonials</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--btn btn--show-modal" href="#"
-              >Open account</a
-            >
-          </li>
-        </ul>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <!-- NAVIGATION BAR -->
+      <nav class="nav navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <img
+            src="img/logo.png"
+            alt="Bankist logo"
+            class="nav__logo"
+            id="logo"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse justify-content-end navbar-collapse"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" href="#section--1">Features</a>
+              </li>
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" href="#section--2">Operations</a>
+              </li>
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" href="#section--3"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="nav-item nav__item">
+                <a
+                  class="nav-link nav__link nav__link--btn btn--show-modal"
+                  href="#"
+                  >Open account</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
       <div class="header__title">
@@ -162,7 +196,8 @@
           </button>
         </div>
         <div
-          class="operations__content operations__content--1 operations__content--active">
+          class="operations__content operations__content--1 operations__content--active"
+        >
           <div class="operations__icon operations__icon--1">
             <svg>
               <use xlink:href="img/icons.svg#icon-upload"></use>
