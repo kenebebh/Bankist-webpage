@@ -121,7 +121,7 @@ img {
   align-items: center;
   height: 9rem;
   width: 100%;
-  padding: 0 6rem;
+  padding: 3rem 6rem;
   z-index: 100;
   position: relative;
 }
@@ -145,6 +145,7 @@ img {
 
 .nav__item {
   margin-left: 4rem;
+  width: fit-content;
 }
 
 .nav__link:link,
@@ -172,12 +173,13 @@ img {
   color: #333;
 }
 
-.navbar-toggler,
+/* commented out */
+/* .navbar-toggler,
 .navbar-toggler-icon {
   position: absolute;
   left: 0;
   display: none;
-}
+} */
 
 /* HEADER */
 .header {
@@ -701,7 +703,7 @@ ul {
 
   /* NAVIGATION */
   .nav {
-    padding: 0 3rem;
+    padding: 3rem;
   }
 
   /* nav and stickly class at the same time */
@@ -773,6 +775,12 @@ ul {
   }
 }
 
+@media (max-width: 992px) {
+  .nav {
+    height: auto;
+  }
+}
+
 @media (max-width: 800px) {
   .section__header {
     font-size: 3.5rem;
@@ -781,7 +789,7 @@ ul {
 
   /* NAVIGATION */
   .nav {
-    padding: 0 2rem;
+    padding: 2rem;
   }
 
   /* HEADER */
@@ -829,7 +837,8 @@ ul {
   }
 }
 
-@media (max-width: 780px) {
+/* I dont thinks it possible declare styles for third-party providers */
+/* @media (max-width: 780px) {
   .navbar-toggler,
   .navbar-toggler-icon {
     position: relative;
@@ -837,7 +846,7 @@ ul {
     font-size: 2rem;
     border-color: var(--color-primary);
   }
-}
+} */
 
 @media (max-width: 700px) {
   .section {
